@@ -1,0 +1,18 @@
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.logoDiv {
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+.navlist {
+  display: flex;
+  gap: 20px;
+}

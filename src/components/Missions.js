@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const Missions = () => (
   <table className="mission-table">
     <thead>
@@ -11,10 +10,10 @@ const Missions = () => (
     </thead>
     <tbody>
       <tr key={' '}>
-        <td>{data.mission}</td>
-        <td>{data.description}</td>
-        <td>{data.status}</td>
-        <td>{data.status}</td>
+        <td>data. missions</td>
+        <td>data.description</td>
+        <td>data.status</td>
+        <td>join/leave</td>
       </tr>
     </tbody>
   </table>

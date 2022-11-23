@@ -1,0 +1,17 @@
+.RocketImg {
+  width: 200px;
+}
+
+.rocketList {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+.RocketName {
+  margin-bottom: 10px;
+}
+
+.RocketP {
+  margin-bottom: 10px;
+}

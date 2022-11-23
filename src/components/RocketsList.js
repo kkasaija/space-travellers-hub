@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import './RocketList.Mudules.css';
 import { handleRocketReservation } from '../redux/rockets/rockets';
 
 const RocketsList = ({
@@ -17,15 +18,16 @@ const RocketsList = ({
 
     <div>
       <ul>
-        <li key={id}>
+        <li key={id} className="rocketList">
           <img
+            className="RocketImg"
             src={image}
             alt="rocket"
           />
 
-          <div>
-            <h2>{name}</h2>
-            <p>
+          <div className="rocketContents">
+            <h2 className="RocketName">{name}</h2>
+            <p className="RocketP">
               {reserved && (<span>Reserved</span>)}
               {description}
             </p>

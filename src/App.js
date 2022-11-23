@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import store from './redux/configureStore';
 import Header from './components/Header';
 import Rockets from './components/Rockets';
 import MyProfile from './components/MyProfile';

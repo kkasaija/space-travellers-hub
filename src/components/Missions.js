@@ -1,11 +1,7 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable react/jsx-key */
-/* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMission } from '../redux/missions/missions';
 
-const initial = true;
 const Missions = () => {
   const missions = useSelector((state) => state.missionReducer.missionList);
   const dispatch = useDispatch();
@@ -33,7 +29,7 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr className="mission-container">
+            <tr className="mission-container" key={mission.mission_id}>
               <td className="name-field">{mission.mission_name}</td>
               <td className="description-field">{mission.description}</td>
               <td className="status-field">
@@ -51,7 +47,6 @@ const Missions = () => {
               </td>
             </tr>
           ))}
-
         </tbody>
       </table>
     </div>

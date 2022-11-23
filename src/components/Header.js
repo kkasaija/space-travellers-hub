@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.modules.css'
 
 const Header = () => (
-  <nav className="nav flex aliCnt jstSpb">
+  <nav className="nav">
     <div className="navItems">
       <div className="logoDiv">
         <img src="./images/3212567.png" width="40" alt="logo" />
@@ -15,6 +15,7 @@ const Header = () => (
         <Link className="link link3" to="/myprofile">My Profile</Link>
       </div>
     </div>
+    <hr className="navLine" />
   </nav>
 );
 

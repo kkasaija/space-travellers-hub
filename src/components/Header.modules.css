@@ -4,6 +4,7 @@
   align-items: center;
   margin-right: 40px;
   margin-left: 40px;
+  margin-top: 10px;
 }
 
 .logoDiv {
@@ -12,7 +13,25 @@
   align-items: center;
 }
 
+.header {
+  font-weight: 700px;
+  font-size: 26px;
+  color: rgb(78, 61, 78)
+}
+
 .navlist {
   display: flex;
   gap: 20px;
+}
+
+.link {
+  font-weight: 500px;
+  font-size: 20px;
+  color: #0000ff
+}
+
+.navLine {
+  border: 1px solid rgb(133, 130, 133);
+  margin-bottom: 40px;
+  margin-top: 20px;
 }

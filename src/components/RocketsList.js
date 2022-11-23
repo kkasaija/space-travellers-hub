@@ -16,7 +16,7 @@ const RocketsList = ({
 
   return (
 
-    <div>
+    <div className="rocketContents">
       <ul>
         <li key={id} className="rocketList">
           <img
@@ -25,14 +25,14 @@ const RocketsList = ({
             alt="rocket"
           />
 
-          <div className="rocketContents">
+          <div>
             <h2 className="RocketName">{name}</h2>
             <p className="RocketP">
-              {reserved && (<span>Reserved</span>)}
+              {reserved && (<span className="RocketReserved">Reserved</span>)}
               {description}
             </p>
-            {reserved && (<button type="button" data-type="cancel" onClick={handleReservation}>Cancel Resrvation</button>)}
-            {!reserved && (<button type="button" data-type="reserve" onClick={handleReservation}>Reserve Rocket</button>)}
+            {reserved && (<button className="RocketCancelBtn" type="button" data-type="cancel" onClick={handleReservation}>Cancel Resrvation</button>)}
+            {!reserved && (<button className="RocketReserveBtn" type="button" data-type="reserve" onClick={handleReservation}>Reserve Rocket</button>)}
           </div>
         </li>
       </ul>

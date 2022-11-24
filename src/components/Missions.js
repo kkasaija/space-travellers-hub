@@ -1,23 +1,21 @@
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMission } from '../redux/missions/missions';
+import { useEffect } from 'react';
+import { fetchMission, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missionReducer.missionList);
+  const missions = useSelector((state) => state.missions.missionList);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchMission());
-  }, []);
+  }, [dispatch]);
+
+  const handleClick = (id) => {
+    dispatch(joinMission(id));
+  };
+
   return (
     <div>
-      {missions.loading && <div>Loading......</div>}
-      {!missions.loading && missions.error ? (
-        <div>
-          Error:
-          {' '}
-          {missions.error}
-        </div>
-      ) : null}
       <table>
         <thead>
           <tr>
@@ -41,6 +39,7 @@ const Missions = () => {
                 <button
                   type="button"
                   className={mission.join ? 'btn active' : 'btn'}
+                  onClick={() => handleClick(mission.mission_id)}
                 >
                   {mission.join ? 'Leave Mission' : 'Join Mission'}
                 </button>

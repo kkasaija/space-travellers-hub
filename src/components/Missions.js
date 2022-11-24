@@ -43,7 +43,7 @@ const Missions = () => {
                   type="button"
                   data-id={mission.mission_id}
                   data-type={mission.join ? 'leave' : 'join'}
-                  className={mission.join ? 'btn active' : 'btn'}
+                  className={mission.join ? 'active' : 'btn'}
                   onClick={handleClick}
                 >
                   {mission.join ? 'Leave Mission' : 'Join Mission'}

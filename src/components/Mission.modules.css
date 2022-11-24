@@ -1,95 +1,83 @@
 .mission-container:nth-child(odd) {
-  background-color: #e5e5e5;
+  background-color: #f6f6f6;
+}
+table {
+  border-collapse: collapse;
+  width: 95vw;
+  margin: 0 auto;
 }
 
-.mission-container-list {
+.mission-container {
   text-align: left;
   line-height: 1.5;
 }
 
-.mission-container-list table,
-.mission-container-list th,
-.mission-container-list td {
-  border: 1px solid #c5c5c5;
-  border-collapse: collapse;
+thead th {
+  border: 1px solid #f2f2f2;
+  padding: 0.2rem;
+  font-size: 18px;
 }
 
-.mission-container-list th {
-  color: #000;
+.mission-container td {
   padding: 0.25rem;
-  font-weight: 600;
+  border: 1px solid #d7d7d7;
 }
 
-.mission-container-list td {
-  padding: 0.25rem;
-}
-
-.mission-container-list td.name-field {
-  font-weight: 600;
-  color: #000;
-}
-
-.mission-container-list td.description-field {
-  font-size: 90%;
-}
-
-.mission-container-list td.status-field,
-.mission-container-list td.action-container {
-  padding: 0.5rem;
+.status-field,
+.action-container {
   white-space: nowrap;
   text-align: center;
 }
 
-.mission-container-list td.status-field p {
-  font-size: 85%;
+.status-field p {
+  font-size: 60%;
   background-color: #555;
   color: #fff;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
 }
 
-.mission-container-list td.status-field p.active {
+.action-container button {
+  font-size: 70%;
+  width: fit-content;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.status-field p.active {
   background-color: #18a2b8;
 }
 
-.mission-container-list td.action-container button {
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
+.action-container .btn {
+  font-size: 80%;
+  padding: 0.2rem;
   text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  border-radius: 0.1rem;
   color: #6c757d;
-  border-color: #6c757d;
+  border-color: #d7d7d7;
+  background-color: #fbfbfb;
 }
 
-.mission-container-list td.action-container button:hover {
+.action-container button:hover {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.mission-container-list td.action-container button.active {
+.action-container .active {
+  font-size: 80%;
+  padding: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
   color: #dc3545;
   border-color: #dc3545;
 }
 
-.mission-container-list td.action-container button.active:hover {
+.action-container .active:hover {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;

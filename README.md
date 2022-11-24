@@ -1,8 +1,6 @@
-# 📖 [Rokect Mission APP] <a name="Rokect Mission APP: connect to API"></a>
+# 📖 Space Travelers' Hub <a name="Rokect Mission APP: connect to API"></a>
 
-> n this project, I connected my React-Redux application to an existing API to create and remove books in a remote server.
-
-**[Rokect Mission APP]** connect to API
+> n this project, we linked the React-Redux application to SpaceX API to fetch Missions/Rockets and also make Rocket-Reservations and/ or Join Missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -21,11 +19,12 @@
 
 ### Key Features <a name="Conneting to api server"></a>
 
-> Post and get data from api server.
+> Interact with spaceX API.
 
-- **[Post]**
-- **[Get]**
-- **[Store]**
+- Fetch Missions
+- Fetch Rockets
+- Join/Leave Missions
+- Make/ Cancel Rocket-Reservations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -33,9 +32,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,48 +51,36 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this [Repository](https://github.com/eerapheal/react-redux-project) to your desired folder:
 
-https://github.com/eerapheal/react-redux-project
 ### To enter Directory
-
-`cd book-store`
-
 ### To Install Packages
-
 `npm install`
-
 ### To run project on local server
-
 `npm start`
-
 ### To run project tests
-
 `npm test`
-
 ### To open project with vs code 
-
 `code .`
-
  ### Deployment
   Push changes to a branch. Wait for the build to pass on our CI server. Tell Hubot to deploy it. Verify that the changes work and fix any problems that come up. Merge the branch into master.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
 > Mention all of the collaborators of this project.
-
 👤 **Author1**
-
 👤 **Ekpenisi Erue Raphael**
 
 - GitHub: [@eerapheal](https://github.com/eerapheal)
 - Twitter: [@ekpenisiraphael](https://twitter.com/ekpenisiraphael)
 - LinkedIn: [ekpenisi-e-raphael-9678a221a](https://www.linkedin.com/in/ekpenisi-e-raphael-9678a221a/)
+
+👤 **Author2**
+👤 **Kasaija Kenneth**
+- GitHub: [@Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
+- Twitter: [@kenn_ug](https://twitter.com/@kenn_ug)
+- LinkedIn: [kenneth-k-310722234](https://linkedin.com/in/kenneth-k-310722234)
+- Email: [G-mail](kasaijak@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

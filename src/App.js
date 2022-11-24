@@ -10,7 +10,6 @@ const App = () => (
   <>
     <Router>
       <Header />
-
       <div className="center">
         <Routes>
           <Route path="/" element={<Rockets />} />

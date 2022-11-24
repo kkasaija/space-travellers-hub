@@ -1,6 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -24,30 +22,38 @@ const missionSlice = createSlice({
 
   reducers: {
     joinMission: (state, action) => {
-      const join = false;
-      state.missionList.map((mission) => (
-        mission.mission_id === action.payload ? Object.assign(
-          mission, { join: !join },
-        ) : mission
-      ));
+      const stateAsign = state;
+      const { id, type } = action.payload;
+      stateAsign.missionList.map((mission) => {
+        if (type === 'leave' && id === mission.mission_id) {
+          Object.assign(mission, { join: false });
+        }
+        if (type === 'join' && id === mission.mission_id) {
+          Object.assign(mission, { join: true });
+        }
+        return mission;
+      });
     },
   },
 
   extraReducers: (builder) => {
     builder.addCase(fetchMission.pending, (state) => {
-      state.status = 'pending';
-      state.missionList = [];
-      state.error = null;
+      const stateAsign = state;
+      stateAsign.status = 'pending';
+      stateAsign.missionList = [];
+      stateAsign.error = null;
     });
     builder.addCase(fetchMission.fulfilled, (state, action) => {
-      state.status = 'success';
-      state.missionList = action.payload;
-      state.error = null;
+      const stateAsign = state;
+      stateAsign.status = 'success';
+      stateAsign.missionList = action.payload;
+      stateAsign.error = null;
     });
     builder.addCase(fetchMission.rejected, (state, action) => {
-      state.status = 'failed';
-      state.missionList = [];
-      state.error = action.payload;
+      const stateAsign = state;
+      stateAsign.status = 'failed';
+      stateAsign.missionList = [];
+      stateAsign.error = action.payload;
     });
   },
 });

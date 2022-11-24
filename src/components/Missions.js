@@ -11,8 +11,10 @@ const Missions = () => {
     dispatch(fetchMission());
   }, [dispatch]);
 
-  const handleClick = (id) => {
-    dispatch(joinMission(id));
+  const handleClick = ({ target }) => {
+    const { type, id } = target.dataset;
+    const payload = { type, id };
+    dispatch(joinMission(payload));
   };
 
   return (
@@ -39,8 +41,10 @@ const Missions = () => {
               <td className="action-container">
                 <button
                   type="button"
+                  data-id={mission.mission_id}
+                  data-type={mission.join ? 'leave' : 'join'}
                   className={mission.join ? 'btn active' : 'btn'}
-                  onClick={() => handleClick(mission.mission_id)}
+                  onClick={handleClick}
                 >
                   {mission.join ? 'Leave Mission' : 'Join Mission'}
                 </button>

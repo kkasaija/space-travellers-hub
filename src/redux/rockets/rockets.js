@@ -19,7 +19,7 @@ const rocketsSlice = createSlice({
     handleRocketReservation: (state, action) => {
       const stateasigni = state;
       const { id, type } = action.payload;
-      const newReservetion = current(state).Rockets.map((rocket) => {
+      const newState = current(state).Rockets.map((rocket) => {
         if (type === 'reserve' && id === rocket.id) {
           return { ...rocket, reserved: true };
         }
@@ -28,7 +28,7 @@ const rocketsSlice = createSlice({
         }
         return rocket;
       });
-      stateasigni.Rockets = newReservetion;
+      stateasigni.Rockets = newState;
     },
   },
   extraReducers: {

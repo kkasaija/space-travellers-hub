@@ -1,0 +1,96 @@
+.mission-container:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+.mission-container-list {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.mission-container-list table,
+.mission-container-list th,
+.mission-container-list td {
+  border: 1px solid #c5c5c5;
+  border-collapse: collapse;
+}
+
+.mission-container-list th {
+  color: #000;
+  padding: 0.25rem;
+  font-weight: 600;
+}
+
+.mission-container-list td {
+  padding: 0.25rem;
+}
+
+.mission-container-list td.name-field {
+  font-weight: 600;
+  color: #000;
+}
+
+.mission-container-list td.description-field {
+  font-size: 90%;
+}
+
+.mission-container-list td.status-field,
+.mission-container-list td.action-container {
+  padding: 0.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.mission-container-list td.status-field p {
+  font-size: 85%;
+  background-color: #555;
+  color: #fff;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.mission-container-list td.status-field p.active {
+  background-color: #18a2b8;
+}
+
+.mission-container-list td.action-container button {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.mission-container-list td.action-container button:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.mission-container-list td.action-container button.active {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.mission-container-list td.action-container button.active:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}

@@ -1,11 +1,9 @@
-/* eslint-disable no-console */
 import { useSelector } from 'react-redux';
+import './MyProfile.modules.css';
 
 const Profile = () => {
   const missions = useSelector((state) => state.missions.missionList);
-  console.log('selected missions', missions);
   const selectedMissions = missions.filter((mission) => mission.join);
-  console.log(selectedMissions);
   return (
     <div className="wrapper_profile">
       <div className="mission-profile">

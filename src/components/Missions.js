@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMission, joinMission } from '../redux/missions/missions';
+import './Mission.modules.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions.missionList);

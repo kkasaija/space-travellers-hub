@@ -1,4 +1,4 @@
-.wrapper_profile {
+.main-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
@@ -7,30 +7,30 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .wrapper_profile {
+  .main-wrapper {
     grid-template-columns: 1fr;
   }
 }
 
-.wrapper_profile .rockets-profile {
+.main-wrapper .rockets-mission {
   margin-bottom: 1rem;
 }
 
-.wrapper_profile h2 {
+.main-wrapper h2 {
   margin-bottom: 1rem;
   font-weight: 500;
   color: #000;
 }
 
-.wrapper_profile ul {
+.main-wrapper ul {
   border: 1px solid #c5c5c5;
   border-radius: 0.25rem;
 }
 
-.wrapper_profile ul li {
+.main-wrapper ul li {
   padding: 1rem;
 }
 
-.wrapper_profile ul li + li {
+.main-wrapper ul li + li {
   border-top: 1px solid #c5c5c5;
 }

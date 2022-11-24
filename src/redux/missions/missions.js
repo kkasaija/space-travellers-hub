@@ -17,7 +17,6 @@ const missionSlice = createSlice({
     missionList: [],
     status: null,
     error: null,
-    join: false,
   },
 
   reducers: {

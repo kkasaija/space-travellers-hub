@@ -8,7 +8,9 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMission());
+    if (missions.length === 0) {
+      dispatch(fetchMission());
+    }
   }, [dispatch]);
 
   const handleClick = ({ target }) => {

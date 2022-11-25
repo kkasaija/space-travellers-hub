@@ -1,0 +1,48 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Not {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(78, 61, 78);
+}
+
+.Myprof {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(78, 61, 78);
+}
+
+.main-wrapper .rockets-mission {
+  margin-bottom: 1rem;
+}
+
+.main-wrapper h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.main-wrapper ul {
+  border: 1px solid #c5c5c5;
+  border-radius: 0.25rem;
+}
+
+.main-wrapper ul li {
+  padding: 1rem;
+}
+
+.main-wrapper ul li + li {
+  border-top: 1px solid #c5c5c5;
+}

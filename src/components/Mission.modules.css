@@ -1,0 +1,84 @@
+.mission-container {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.mission-container:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+thead th {
+  border: 1px solid #f2f2f2;
+  padding: 0.2rem;
+  font-size: 18px;
+}
+
+.mission-container td {
+  padding: 0.25rem;
+  border: 1px solid #d7d7d7;
+}
+
+.status-field,
+.action-container {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.status-field p {
+  font-size: 60%;
+  background-color: #555;
+  color: #fff;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.action-container button {
+  font-size: 70%;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.status-field p.active {
+  background-color: #18a2b8;
+}
+
+.action-container .btn {
+  font-size: 80%;
+  padding: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+  color: #6c757d;
+  border-color: #d7d7d7;
+  background-color: #fbfbfb;
+}
+
+.action-container button:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.action-container .active {
+  font-size: 80%;
+  padding: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.action-container .active:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}

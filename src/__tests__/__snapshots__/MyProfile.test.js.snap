@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Profile component 1`] = `
+<div
+  className="main-wrapper"
+>
+  <div
+    className="rockets-mission"
+  >
+    <h1
+      className="Myprof"
+    >
+      My Rockets
+    </h1>
+    <ul>
+      <li>
+        <p
+          className="Not"
+        >
+          Reserved Rockets Not Found
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="rocket-mission"
+  >
+    <h1
+      className="Myprof"
+    >
+      My Missions
+    </h1>
+    <ul>
+      <li>
+        <p
+          className="Not"
+        >
+          Activated Missions Not Found
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

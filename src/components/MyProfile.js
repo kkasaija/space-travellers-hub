@@ -10,7 +10,7 @@ const Profile = () => {
   return (
     <div className="main-wrapper">
       <div className="rockets-mission">
-        <h2>My Rockets</h2>
+        <h1 className="Myprof">My Rockets</h1>
         <ul>
           {selectedRockets.length > 0 ? (
             selectedRockets.map((rocket) => (
@@ -18,13 +18,13 @@ const Profile = () => {
             ))
           ) : (
             <li>
-              <p>Reserved Rockets Not Found</p>
+              <p className="Not">Reserved Rockets Not Found</p>
             </li>
           )}
         </ul>
       </div>
       <div className="rocket-mission">
-        <h2>My Missions</h2>
+        <h1 className="Myprof">My Missions</h1>
         <ul>
           {selectedMissions.length > 0 ? (
             selectedMissions.map((mission) => (
@@ -32,7 +32,7 @@ const Profile = () => {
             ))
           ) : (
             <li>
-              <p>Activated Missions Not Found</p>
+              <p className="Not">Activated Missions Not Found</p>
             </li>
           )}
         </ul>

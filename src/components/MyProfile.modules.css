@@ -12,6 +12,18 @@
   }
 }
 
+.Not {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(78, 61, 78)
+}
+
+.Myprof {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(78, 61, 78)
+}
+
 .main-wrapper .rockets-mission {
   margin-bottom: 1rem;
 }

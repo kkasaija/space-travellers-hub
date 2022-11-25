@@ -1,7 +1,8 @@
 .rocketContents {
   display: block;
-  padding: 0px 25px;
+  padding: 0 25px;
 }
+
 .RocketImg {
   width: 230px;
   height: 170px;
@@ -15,39 +16,40 @@
 
 .RocketName {
   margin-bottom: 10px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 30px;
-  color: rgb(78, 61, 78)
+  color: rgb(78, 61, 78);
 }
 
 .RocketP {
   margin-bottom: 10px;
   padding-right: 110px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
   color: rgb(78, 61, 78);
 }
 
 .RocketReserved {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
-  background-color: #0000ff;
+  background-color: #00f;
   color: #ffff;
   padding: 1px 5px;
 }
 
 .RocketCancelBtn {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
   background-color: #fff;
   color: rgb(78, 61, 78);
   padding: 3px 9px;
   border: 1px solid rgb(78, 61, 78);
 }
+
 .RocketReserveBtn {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
-  background-color: #0000ff;
+  background-color: #00f;
   color: #ffff;
   padding: 3px 9px;
   border: none;

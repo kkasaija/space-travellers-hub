@@ -1,15 +1,16 @@
+.mission-container {
+  text-align: left;
+  line-height: 1.5;
+}
+
 .mission-container:nth-child(odd) {
   background-color: #f6f6f6;
 }
+
 table {
   border-collapse: collapse;
   width: 95vw;
   margin: 0 auto;
-}
-
-.mission-container {
-  text-align: left;
-  line-height: 1.5;
 }
 
 thead th {
@@ -39,7 +40,6 @@ thead th {
 
 .action-container button {
   font-size: 70%;
-  width: fit-content;
   color: #fff;
   border-radius: 0.25rem;
 }

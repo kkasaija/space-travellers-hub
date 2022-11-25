@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot testing snapshot for Profile component 1`] = `
+exports[`snapshot testing snapshot for MyProfile component 1`] = `
 <div
   className="main-wrapper"
 >

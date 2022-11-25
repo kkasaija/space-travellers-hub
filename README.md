@@ -90,9 +90,9 @@ Clone this [Repository](https://github.com/eerapheal/react-redux-project) to you
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[status]**
-- [ ] **[styling]**
-- [ ] **[catigories]**
+- [x] **[Profile]**
+- [x] **[Mission]**
+- [x] **[Rockets]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this [Repository](https://github.com/eerapheal/react-redux-project) to you
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/eerapheal/react-redux-project/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +112,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project, please don't forget to give it a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

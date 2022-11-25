@@ -9,14 +9,14 @@
 
 .logoDiv {
   display: flex;
-  gap:20px;
+  gap: 20px;
   align-items: center;
 }
 
 .header {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 26px;
-  color: rgb(78, 61, 78)
+  color: rgb(78, 61, 78);
 }
 
 .navlist {
@@ -25,9 +25,9 @@
 }
 
 .link {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
-  color: #0000ff
+  color: #00f;
 }
 
 .navLine {

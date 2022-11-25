@@ -32,8 +32,8 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr className="mission-container" key={mission.mission_id}>
-              <td className="name-field">{mission.mission_name}</td>
+            <tr className="mission-container" key={mission.id}>
+              <td className="name-field">{mission.name}</td>
               <td className="description-field">{mission.description}</td>
               <td className="status-field">
                 <p className={mission.join ? 'active' : ''}>
@@ -43,7 +43,7 @@ const Missions = () => {
               <td className="action-container">
                 <button
                   type="button"
-                  data-id={mission.mission_id}
+                  data-id={mission.id}
                   data-type={mission.join ? 'leave' : 'join'}
                   className={mission.join ? 'active' : 'btn'}
                   onClick={handleClick}

@@ -28,7 +28,7 @@ const Profile = () => {
         <ul>
           {selectedMissions.length > 0 ? (
             selectedMissions.map((mission) => (
-              <li key={mission.mission_id}>{mission.mission_name}</li>
+              <li key={mission.id}>{mission.name}</li>
             ))
           ) : (
             <li>

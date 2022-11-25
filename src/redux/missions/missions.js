@@ -24,10 +24,10 @@ const missionSlice = createSlice({
       const stateAsign = state;
       const { id, type } = action.payload;
       stateAsign.missionList.map((mission) => {
-        if (type === 'leave' && id === mission.mission_id) {
+        if (type === 'leave' && id === mission.id) {
           Object.assign(mission, { join: false });
         }
-        if (type === 'join' && id === mission.mission_id) {
+        if (type === 'join' && id === mission.id) {
           Object.assign(mission, { join: true });
         }
         return mission;
@@ -44,8 +44,13 @@ const missionSlice = createSlice({
     });
     builder.addCase(fetchMission.fulfilled, (state, action) => {
       const stateAsign = state;
+      const missionsArr = action.payload.map((mission) => ({
+        id: mission.mission_id,
+        name: mission.mission_name,
+        description: mission.description,
+      }));
+      stateAsign.missionList = missionsArr;
       stateAsign.status = 'success';
-      stateAsign.missionList = action.payload;
       stateAsign.error = null;
     });
     builder.addCase(fetchMission.rejected, (state, action) => {
